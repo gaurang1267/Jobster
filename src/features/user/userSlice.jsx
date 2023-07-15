@@ -129,7 +129,7 @@ const userSlice = createSlice({
         const { user } = payload;
         state.isLoading = false;
         state.user = user;
-        addUserToLocalStorage(user);
+        addUsertoLocalStorage(user);
 
         toast.success(`User Updated!`);
       })
